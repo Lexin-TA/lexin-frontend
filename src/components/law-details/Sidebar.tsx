@@ -65,7 +65,7 @@ export function Sidebar({tab, setTab, lawId} : SidebarProps) {
                 }}
                 leftIcon={<LawDetailsIcon />} 
             />
-            <SidebarItem 
+            {/* <SidebarItem 
                 name="Peraturan Konsolidasi" 
                 active={tab === "consolidation"} 
                 onClick={() => {
@@ -73,7 +73,7 @@ export function Sidebar({tab, setTab, lawId} : SidebarProps) {
                     router.push(`/legal-doc/${lawId}?tab=consolidation`)
                 }}
                 leftIcon={<ConsolidationIcon />} 
-            />
+            /> */}
             <SidebarItem 
                 name="Sejarah" 
                 active={tab === "history"} 

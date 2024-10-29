@@ -1,4 +1,5 @@
 "use client"
+
 import { useEffect, useState } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { Icon } from "@iconify/react/dist/iconify.js";
@@ -17,7 +18,7 @@ export default function Navbar() {
     const inSearchPage = pathname === '/search'
     const searchQueryExists = (searchParams.get('q') !== null)
     const inSearchResultPage = inSearchPage && searchQueryExists
-    const showLexinLogo = inSearchResultPage || pathname.startsWith('/law-details') 
+    const showLexinLogo = inSearchResultPage || pathname.startsWith('/legal-doc') 
 
     // States
     const [loggedInAs, setLoggedInAs] = useState<UserDataResponseType | null>(null)

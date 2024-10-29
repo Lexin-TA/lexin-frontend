@@ -30,6 +30,7 @@ const config: Config = {
         "blue-400" : "#103AA5",
         "yellow-100": "#FCF9E8",
         "yellow-400": "#9F880F",
+        "bright-blue" : "#1651E9",
       }
     },
   },
